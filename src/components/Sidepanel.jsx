@@ -64,7 +64,7 @@ export default function Sidepanel() {
     }
 
     return (
-        <Col md={2} className="p-0" style={{ minWidth: "200px", heigh: "100%" }}>
+        <Col md={2} className="p-0 w-100 h-100" style={{ minWidth: "200px" }}>
             <Container className="p-2 w-100" style={{ backgroundColor: "#d6f349", height: "100vh" }}>
                 <Stack direction="vertical" gap={2} align="start">
                     <Stack direction="vertical" gap={1}>

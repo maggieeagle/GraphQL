@@ -144,8 +144,8 @@ export default class ApexChart extends React.Component {
 
     render() {
         return (
-            <div id="chart" className="mt-4">
-                <ReactApexChart options={this.state.options} series={this.state.series} type="treemap" height={350} />
+            <div id="chart" className="pt-4 pb-2" style={{ height: '50vh' }}>
+                <ReactApexChart options={this.state.options} series={this.state.series} type="treemap" height={'100%'} />
             </div>
         );
     }

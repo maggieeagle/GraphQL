@@ -87,8 +87,8 @@ export default class Pie extends Component {
 
   render() {
     return (
-      <div id="chart" className="mt-3">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" />
+      <div id="chart" className="pt-3" style={{ height: '50vh' }}>
+        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" height={'100%'}/>
       </div>
     );
   }

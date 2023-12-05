@@ -24,28 +24,32 @@ export default function Dashboard() {
 
 
   return (
-    <Container fluid className="p-0">
+    <Container fluid className="p-0 overflow-hidden">
       <Row className="m-0">
         {/* Left Sidebar */}
-        <Sidepanel></Sidepanel>
+        <Col md={2} className="p-0">
+          <Sidepanel></Sidepanel>
+        </Col>
 
         {/* Main Content */}
-        <Col md={5} className="h-100">
+        <Col md={10} className="m-0">
           <Row>
-            <Col md={10}>
-              <Pie />
+            <Col md={6}>
+              <Row>
+                <Pie />
+              </Row>
+              <Row>
+                <Treemap />
+              </Row>
             </Col>
-          </Row>
-          <Row>
-            <Col md={10}>
-              <Treemap />
+
+
+            <Col md={6} className="m-0">
+              <Bar />
             </Col>
           </Row>
         </Col>
-        <Col md={5}>
-          <Bar />
-        </Col>
-      </Row>
-    </Container>
+      </Row >
+    </Container >
   );
 }

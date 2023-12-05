@@ -14,7 +14,7 @@ export default class ApexChart extends React.Component {
       options: {
         chart: {
           type: 'bar',
-          width: 500,
+          width: 'auto',
         },
         title: {
           text: 'Audits per auditor (top 20)'
@@ -126,7 +126,7 @@ export default class ApexChart extends React.Component {
 
   render() {
     return (
-      <div id="chart" className="mt-3" style={{ height: '95%' }}>
+      <div id="chart" className="pt-3" style={{ height: '100vh' }}>
         <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={'100%'} />
       </div>
 
