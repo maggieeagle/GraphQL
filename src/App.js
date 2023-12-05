@@ -11,8 +11,8 @@ function App() {
   return (
     <BrowserRouter basename="/GraphQL/">
       <Routes>
-        {/* <Route path="/" element={<Navigate to="/dashboard" replace />} /> */}
-        <Route index path="/" element={<Dashboard />} />
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route index path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<SignIn />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
