@@ -30,7 +30,7 @@ export default function Dashboard() {
         <Sidepanel></Sidepanel>
 
         {/* Main Content */}
-        <Col md={5}>
+        <Col md={5} className="h-100">
           <Row>
             <Col md={10}>
               <Pie />

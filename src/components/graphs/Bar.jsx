@@ -33,6 +33,17 @@ export default class ApexChart extends React.Component {
             horizontal: true,
           }
         },
+        tooltip: {
+          enabled: true,
+          shared: true,
+          followCursor: true,
+          intersect: false,
+          y: {
+            formatter: function (val) {
+              return Math.round(val);
+            }
+          }
+        }
       },
 
     };
