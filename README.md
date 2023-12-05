@@ -13,7 +13,7 @@ Orel Margarita @maggieeagle
   
 To reach the web-site in web-browser:
 
-- [Just click here]()
+- [Just click here](https://maggieeagle.github.io/GraphQL)
 
 To run the web-site on local machine:
 
