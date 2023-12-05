@@ -10,9 +10,9 @@ function App() {
   return (
     <HashRouter basename="/GraphQL/">
       <Routes>
-        <Route path="/" element={<Navigate to="#/dashboard" />} />
-        <Route index path="#/dashboard" element={<Dashboard />} />
-        <Route path="#/login" element={<SignIn />} />
+        <Route path="/" element={<Navigate to="/dashboard" />} />
+        <Route index path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<SignIn />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </HashRouter>
