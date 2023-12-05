@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import ReactDOM from "react-dom/client";
-import { Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import NoPage from "./pages/NoPage.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import SignIn from './components/SignIn.jsx';
