@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/GraphQL">
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" />} />
         <Route index path="/dashboard" element={<Dashboard />} />
